@@ -1,0 +1,41 @@
+html
+{
+  background-color: #1f2227;
+}
+
+body
+{
+  background-color: #1f2227;
+}
+
+h1
+{
+  text-align: center;
+  background-color: blue;
+  color: #EEEEEE;
+}
+
+p
+{
+  color: #EEEEEE;
+}
+
+button
+{
+  background-color: orange;
+}
+
+a
+{
+  color: black;
+}
+
+h2
+{
+  color: #EEEEEE;
+}
+
+.insta
+{
+  color: #56AAFF;
+}
