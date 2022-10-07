@@ -2,31 +2,90 @@
 <html lang="fr">
   
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="stylepic.css">
+  
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/LogoSchoolRemastered.png">
-    <title>Lubin Pappalardo - Photographie</title>
-  </head>
+    <meta charset="utf-8">
+    <title>Lubin Pappalardo - Gallerie</title>
+    
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffb300;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #E09D00;
+}
+
+.active {
+  background-color: #0660a1;
+  color: white;
+  border: 2px solid white;
+}
+
+.img {
+  float: right;
+}
+
+</style>
+    
+    </head>
+  
+  
+      <ul>
+  <li class="img"><img src="assets/LogoSchoolRemastered.png" alt="Logo"></li>
+  <li><a href="index.html">Accueil</a></li>
+  <li><a class="active" href="pic.html">Gallerie</a></li>
+      </ul>
+      
+      <header>
+      
+      <h1>GALLERIE</h1>
+        
+    </header>
   
   <body>
   
-    <h1>Lubin Pappalardo<br/>PHOTOGRAPHIE</h1>
-    <p class="button">
-    <button><a href="index.html">retour</a></button>
-    </p>
-    
-    <h2 class="picex">GALLERIE : exemples</h2>
+    <section>
+     
+    <h2 class="picex">PHOTOGRAPHIE</h2>
     <p>
     <img src="assets/pic1.jpg" alt="Picture 1" height=300/>
     <img src="assets/pic2.jpg" alt="Picture 2" height=300/>
     <img src="assets/pic3.jpg" alt="Picture 3" height=300/>
     <img src="assets/pic4.jpg" alt="Picture 4" height=300/>
     </p>
+    
+    <h2 class="picex">ART/DESSIN</h2>
+    <p>
+    <img src="assets/art1.jpg" alt="Art/dessin 1" height=300/>
+    <img src="assets/art2.jpg" alt="Art/dessin 2" height=300/>
+    <img src="assets/art3.jpg" alt="Art/dessin 3" height=300/>
+    <img src="assets/art4.jpg" alt="Art/dessin 4" height=300/>
+    </p>
     <h2 class="contact">Pour voir la suite :</h2>
     <p>
     Instagram : <a href="https://www.instagram.com/xtsoa_/">xtsoa_</a> 
     </p>
-    <p> <img src="assets/LogoSchoolRemastered.png" alt="Logo" width=75 height=75/> </p>
+    
+    </section>
+    
   </body>
   
 </html>
