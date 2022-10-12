@@ -72,7 +72,7 @@ li a:hover:not(.active) {
   
   <body>
   
-    <style>
+<style>
     
           .footer {
         background-color: #0660a1;
@@ -106,34 +106,192 @@ li a:hover:not(.active) {
       
       .tree {
         color: black;
+        
+      }
+
+      div.polaroid {
+        background-color: #0A2450;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+        margin: 16px 16px;
+      }
+
+      div.container {
+        text-align: center;
+        padding: 16px 16px
       }
       
-      h2 {
-        padding: 0px 20px;
+      .desc1 {
+        background-color: #0A2450;
+        color: white;
       }
+      
+      .desc1t {
+        background-color: #0A2450;
+        color: white;
+        font-family: "Times New Roman", sans-serif;
+        text-align: left;
+      }
+      
+.container1 {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container1:hover .image {
+  opacity: 0.3;
+}
+
+.container1:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #ffb300;
+  color: black;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.clickme {
+  text-decoration: none;
+  color: black;
+}
+
+      .column {
+        float: left;
+      }
+
+      .column.left {
+        width: 50%;
+      }
+
+      .column.right {
+        width: 50%;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
     </style>
-     
-    <h2 class="picex">PHOTOGRAPHY</h2>
-    <p>
-    <img src="assets/pic1.jpg" alt="Picture 1" height=300/>
-    <img src="assets/pic2.jpg" alt="Picture 2" height=300/>
-    <img src="assets/pic3.jpg" alt="Picture 3" height=300/>
-    <img src="assets/pic4.jpg" alt="Picture 4" height=300/>
-    </p>
-    
-    <h2 class="picex">ART/DRAWINGS</h2>
-    <p>
-    <img src="assets/Art1.jpg" alt="Art/dessin 1" height=300/>
-    <img src="assets/Art2.JPG" alt="Art/dessin 2" height=300/>
-    <img src="assets/Art3.JPG" alt="Art/dessin 3" height=300/>
-    <img src="assets/Art4.jpg" alt="Art/dessin 4" height=300/>
-    </p>
-    
-          <div class="footer">
-        <p class="contact"><button class="linktree"><a class="tree" href="https://linktr.ee/pappus07">Linktree</a></button>Email Rochambeau : <strong>pappalardol@rochambeau.org</strong></p>
+  
+<div>
+  <div class="row">
+    <div class="column left">
+      <div class="polaroid">
+        <div class="row">
+        <div class="column left">
+        <div class="container1">
+        <img src="assets/latest.jpg" alt="Photographie" width=100 class="image">
+        <div class="middle">
+          <div class="text"><a class="clickme" href="galeriephoto.html">Take a look</a></div>
+        </div>
+        </div>
+        </div>
+        <div class="column right">
+        <div class="container">
+        <h2 class="desc1t">Photography</h2>
+        <p class="desc1">
+        Discover in this gallery my latest pictures and oldest one. You will be able to see wildlife photography, landscape photography but also street photography.
+        </p>
+        </div>
+        </div>
+        </div>
       </div>
+    </div>
+
+    <div class="column right">
+      <div class="polaroid">
+        <div class="row">
+        <div class="column left">
+        <div class="container1">
+        <img src="assets/latest.jpg" alt="Dessin" width=100 class="image">
+        <div class="middle">
+          <div class="text"><a class="clickme" href="galerieart.html">Take a look</a></div>
+        </div>
+        </div>
+        </div>
+        <div class="column right">
+        <div class="container">
+        <h2 class="desc1t">Art</h2>
+        <p class="desc1">
+        Discover in this gallery my drawings and arts.
+        </p>
+        </div>
+        </div>
+        </div>
+      </div>  
+      </div>
+  </div>
+</div>
+
+<div>
+  <div class="row">
+    <div class="column left">
+      <div class="polaroid">
+        <div class="row">
+        <div class="column left">
+        <img src="assets/latest.jpg" alt="Dernière photographie" width=100 class="image">
+        </div>
+        <div class="column right">
+        <div class="container">
+        <h2 class="desc1t">Latest photography</h2>
+        <p class="desc1">
+        My latest picture
+        </p>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column right">
+      <div class="polaroid">
+        <div class="row">
+        <div class="column left">
+        <img src="assets/latest.jpg" alt="Dernier dessin/sculpture" width=100 class="image">
+        </div>
+        <div class="column right">
+        <div class="container">
+        <h2 class="desc1t">Latest art</h2>
+        <p class="desc1">
+        Here is my latest drawing/art
+        </p>
+        </div>
+        </div>
+        </div>
+      </div>  
+      </div>
+  </div>
+</div>
+    
+<div class="footer">
+        <p class="contact"><button class="linktree"><a class="tree" href="https://linktr.ee/pappus07">Linktree</a></button>Email Rochambeau : <strong>pappalardol@rochambeau.org</strong></p>
+</div>
     
   </body>
   
 </html>
-
