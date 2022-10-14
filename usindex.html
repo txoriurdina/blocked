@@ -81,6 +81,17 @@ li a:hover:not(.active) {
       
       .about {
         padding: 0px 20px;
+        column-count: 2;
+        column-gap: 40px;
+        column-rule-style: solid;
+        column-rule-width: 1px;
+      }
+      
+      @media screen and (max-width: 500px) {
+        .about {
+          width: 100%;
+          column-count: 1;
+        }
       }
       
       .column {
