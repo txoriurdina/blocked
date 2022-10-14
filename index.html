@@ -67,8 +67,8 @@ li a:hover:not(.active) {
   <li class="img"><img src="assets/LogoSchoolRemastered.png" alt="Logo" width="45"></li>
   <li><a class="active" href="index.html">Accueil</a></li>
   <li><a href="pic.html">Galerie</a></li>
-  <li class="language"><a href="index.html">&#127467;&#127479;</a></li>
-  <li class="language"><a href="usindex.html">&#127482;&#127480;</a></li>
+  <li class="language"><a href="usindex.html">&#127467;&#127479;</a></li>
+  <li class="language"><a href="index.html">&#127482;&#127480;</a></li>
       </ul>
       
 <header>
@@ -81,6 +81,17 @@ li a:hover:not(.active) {
       
       .about {
         padding: 0px 20px;
+        column-count: 2;
+        column-gap: 40px;
+        column-rule-style: solid;
+        column-rule-width: 1px;
+      }
+      
+      @media screen and (max-width: 500px) {
+        .about {
+          width: 100%;
+          column-count: 1;
+        }
       }
       
       .column {
@@ -103,8 +114,7 @@ li a:hover:not(.active) {
         clear: both;
       }
 
-      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 600px) {
         .column.side, .column.middle, .about {
           width: 100%;
         }
@@ -169,7 +179,7 @@ li a:hover:not(.active) {
         </div>
       </div>
       
-      <h2 class="about">Mon histoire</h2>
+      <h2 class="about">Autobiographie</h2>
           <p class="about">
           Je suis né à Reims en France le 17 novembre 2007. Mais comme mon père militaire, j'ai souvent déménagé. Après un an dans ma ville natale, j'ai déménagé pour 2 ans à Saint-Dizier où mon petit frère qui à 3 ans de moins que moi est né. Puis nous avons emménagé à Mont-de-Marsan pendant 6 ans, c'est là que j'ai grandi et c'est cet endroit que j'ai toujours considéré comme "l'endroit d'où je venais". Ensuite, j'ai déménagé pour 1 an en Alabama aux Etats-Unis. Ce fut un changement conséquent mais j'ai pu apprendre l'anglais presque couramment et je m'y suis plu. Après ça, on est reparti en France pour la capitale, Paris où nous sommes restés 4 ans, de ma 6e jusqu'à la 3e. J'ai pu également entretenir mon anglais grâce à des cours advanced english. Enfin. Je suis arrivé là où je me trouve actuellement, à Bethesda, près de Washington D.C., U.S.A, au Lycée français de Rochambeau.
           </p>
