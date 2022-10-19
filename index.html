@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="fr">
 
@@ -62,7 +61,6 @@ li a:hover:not(.active) {
     
     </head>
   
-  
       <ul>
   <li class="img"><img src="assets/LogoSchoolRemastered.png" alt="Logo" width="45"></li>
   <li><a class="active" href="index.html">Accueil</a></li>
@@ -99,15 +97,26 @@ li a:hover:not(.active) {
         padding: 20px;
       }
 
-      .column.side {
-        width: 25%;
+      .column.left {
+        width: 30%;
+        background-color: #0A2450;
       }
 
-      .column.middle {
-        width: 50%;
+      .column.right {
+        width: 60%;
+        background-color: #0A2450;
+      }
+      
+      .column.left.bis {
+        width: 60%;
+        background-color: #0A2450;
       }
 
-      /* Clear floats after the columns */
+      .column.right.bis {
+        width: 30%;
+        background-color: #0A2450;
+      }
+
       .row:after {
         content: "";
         display: table;
@@ -115,7 +124,7 @@ li a:hover:not(.active) {
       }
 
       @media screen and (max-width: 600px) {
-        .column.side, .column.middle, .about {
+        .column.left, .column.right, .about, .column.left.bis, .column.right.bis {
           width: 100%;
         }
       }
@@ -154,35 +163,126 @@ li a:hover:not(.active) {
         color: black;
       }
       
+      .box {
+        background-color: #0A2450;
+        margin: 16px 16px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+      
+      .boxtext {
+        background-color: #0A2450;
+      }
+      
+      .boxtitle {
+        text-align: center;
+      }
+      
       </style>
       
-      <h2 class="about">À propos</h2>
-      <p class="about">
-      Bonjour ! Je m'appelle Lubin et je suis un élève de 2nd à Rochambeau. J'ai réalisé ce site par moi même en utilisant le langage html et css. Soyez libre d'explorer mon site, cela me fait plaisir. Si jamais vous trouvez des erreurs, des liens qui ne fonctionnent pas, ou si vous avez des suggestions. Vous pouvez me contacter à l'email en bas de la page.
-      </p>
+<h2 class="about">À propos</h2>
+<p class="about">
+Bonjour ! Je m'appelle Lubin et je suis un élève de 2nd à Rochambeau. J'ai réalisé ce site par moi même en utilisant le langage html et css. Soyez libre d'explorer mon site, cela me fait plaisir. Si jamais vous trouvez des erreurs, des liens qui ne fonctionnent pas, ou si vous avez des suggestions. Vous pouvez me contacter à l'email en bas de la page.
+</p>
 
+<h2 class="about">Histoire et origines</h2>
+<p class="about">
+Je suis né à Reims en France le 17 novembre 2007. Mais comme mon père militaire, j'ai souvent déménagé. Après un an dans ma ville natale, j'ai déménagé pour 2 ans à Saint-Dizier où mon petit frère qui à 3 ans de moins que moi est né. Puis nous avons emménagé à Mont-de-Marsan pendant 6 ans, c'est là que j'ai grandi et c'est cet endroit que j'ai toujours considéré comme "l'endroit d'où je venais". Ensuite, j'ai déménagé pour 1 an en Alabama aux Etats-Unis. Ce fut un changement conséquent mais j'ai pu apprendre l'anglais presque couramment et je m'y suis plu. Après ça, on est reparti en France pour la capitale, Paris où nous sommes restés 4 ans, de ma 6e jusqu'à la 3e. J'ai pu également entretenir mon anglais grâce à des cours advanced english. Enfin. Je suis arrivé là où je me trouve actuellement, à Bethesda, près de Washington D.C., U.S.A, au Lycée français de Rochambeau.
+</p>
+<p class="about">
+Mes parents et grands-parents sont français. J'ai tout de même des origines italiennes et espagnoles du côté de mon père. En effet, mon nom de famille vient de la région de Naples en Italie.
+</p>
+
+<h2 class="boxtitle">CENTRES D'INTÉRÊTS ET PERSONNALITÉ</h2>
+
+<div class="box">
       <div class="row">
-        <div class="column side">
-          <p>
-          <img src="assets/LogoSchoolRemastered.png" alt="Logo" width="300">
-          </p>
-        </div>
-
-        <div class="column middle">
-          <h2>Sur moi</h2>
-          <p>
+        <div class="column left bis">
+          <h2 class="boxtext">Sur moi</h2>
+          <p class="boxtext">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
           </p>
-          <p>
+         <p class="boxtext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+        </div>
+
+        <div class="column right bis">
+        <img src="assets/LogoSchoolRemastered.png" alt="Logo" width="300">
+        </div>
+      </div>
+</div>      
+      
+<div class="box">
+      <div class="row">
+        <div class="column left">
+          <img src="assets/LogoSchoolRemastered.png" alt="Logo" width="300">
+        </div>
+
+        <div class="column right">
+          <h2 class="boxtext">Photographie</h2>
+          <p class="boxtext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+          </p>
+          <p class="boxtext">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
           </p>
         </div>
       </div>
-      
-      <h2 class="about">Autobiographie</h2>
-          <p class="about">
-          Je suis né à Reims en France le 17 novembre 2007. Mais comme mon père militaire, j'ai souvent déménagé. Après un an dans ma ville natale, j'ai déménagé pour 2 ans à Saint-Dizier où mon petit frère qui à 3 ans de moins que moi est né. Puis nous avons emménagé à Mont-de-Marsan pendant 6 ans, c'est là que j'ai grandi et c'est cet endroit que j'ai toujours considéré comme "l'endroit d'où je venais". Ensuite, j'ai déménagé pour 1 an en Alabama aux Etats-Unis. Ce fut un changement conséquent mais j'ai pu apprendre l'anglais presque couramment et je m'y suis plu. Après ça, on est reparti en France pour la capitale, Paris où nous sommes restés 4 ans, de ma 6e jusqu'à la 3e. J'ai pu également entretenir mon anglais grâce à des cours advanced english. Enfin. Je suis arrivé là où je me trouve actuellement, à Bethesda, près de Washington D.C., U.S.A, au Lycée français de Rochambeau.
+</div> 
+
+<div class="box">
+      <div class="row">
+        <div class="column left bis">
+          <h2 class="boxtext">Art</h2>
+          <p class="boxtext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
           </p>
+         <p class="boxtext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+        </div>
+
+        <div class="column right bis">
+        <img src="assets/LogoSchoolRemastered.png" alt="Logo" width="300">
+        </div>
+      </div>
+</div>  
+
+<div class="box">
+      <div class="row">
+        <div class="column left">
+          <img src="assets/LogoSchoolRemastered.png" alt="Logo" width="300">
+        </div>
+
+        <div class="column right">
+          <h2 class="boxtext">Musique</h2>
+          <p class="boxtext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+          </p>
+          <p class="boxtext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+          </p>
+        </div>
+      </div>
+</div>
+
+<div class="box">
+      <div class="row">
+        <div class="column left bis">
+          <h2 class="boxtext">Technologie</h2>
+          <p class="boxtext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+          </p>
+         <p class="boxtext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+        </div>
+
+        <div class="column right bis">
+        <img src="assets/LogoSchoolRemastered.png" alt="Logo" width="300">
+        </div>
+      </div>
+</div> 
 
       <div class="footer">
         <p class="contact"><button class="linktree"><a class="tree" href="https://linktr.ee/pappus07">Linktree</a></button>Email Rochambeau : <strong>pappalardol@rochambeau.org</strong></p>
